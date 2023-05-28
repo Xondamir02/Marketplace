@@ -1,5 +1,6 @@
 using ChatApi.Extensions;
 using ChatCore1.Context;
+using ChatCore1.Managers;
 using IdentityBase.Context;
 using IdentityBase.Extensions;
 using IdentityBase.Middlewares;
@@ -49,7 +50,7 @@ builder.Services.AddDbContext<IdentityDbContext>(options =>
 });
 builder.Services.AddIdentity(builder.Configuration);
 
-//builder.Services.AddScoped<ConversationManager>();
+builder.Services.AddScoped<ConversationManager>();
 
 var app = builder.Build();
 
