@@ -9,7 +9,6 @@ namespace ChatApi.Controllers;
 [Route("api/[controller]")]
 [ApiController]
 [Authorize]
-
 public class ConversationsController : ControllerBase
 {
     private readonly ConversationManager _conversationManager;

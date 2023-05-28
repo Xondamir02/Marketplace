@@ -11,6 +11,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
+
 builder.Services.AddSwaggerGen(c =>
 {
     c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme()
@@ -48,6 +49,7 @@ builder.Services.AddDbContext<IdentityDbContext>(options =>
 {
     options.UseNpgsql(builder.Configuration.GetConnectionString("IdentityDb"));
 });
+
 builder.Services.AddIdentity(builder.Configuration);
 
 builder.Services.AddScoped<ConversationManager>();
