@@ -5,10 +5,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using IdentityBase.Managers;
 using IdentityBase.Options;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.IdentityModel.Tokens;
+using IdentityBase.Context;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.EntityFrameworkCore;
 
 namespace IdentityBase.Extensions;
 
@@ -42,5 +46,14 @@ public static class ServicesCollectionExtension
         services.AddJwt(configuration);
         services.AddScoped<JwtTokenManager>();
         services.AddScoped<UserManager>();
+    }
+
+    public static void MigrateIdentityDb(this WebApplication app)
+    {
+        if (app.Services.GetService<IdentityDbContext>() != null)
+        {
+            var identityDb = app.Services.GetRequiredService<IdentityDbContext>();
+            identityDb.Database.Migrate();
+        }
     }
 }
