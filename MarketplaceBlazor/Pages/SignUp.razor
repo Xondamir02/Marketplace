@@ -57,7 +57,7 @@ else
     public async Task CreateUser()
     {
         IsLoading = true;
-        await Client.PostAsJsonAsync("/api/signin", _userDto);
+        await Client.PostAsJsonAsync("/api/signup", _userDto);
         IsLoading = false;
 
         NavigationManager.NavigateTo("/profile");
