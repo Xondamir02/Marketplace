@@ -1,6 +1,6 @@
-﻿using IdentityBase.Models;
+﻿using IdentityBase.Managers;
+using IdentityBase.Models;
 using IdentityBase.Providers;
-using IdentityBase.Managers;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 

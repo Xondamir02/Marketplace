@@ -1,4 +1,3 @@
-using ChatApi.Extensions;
 using ChatCore1.Context;
 using ChatCore1.Managers;
 using IdentityBase.Context;
@@ -61,13 +60,23 @@ app.UseSwaggerUI();
 
 app.UseCors(cors =>
 {
-    cors.AllowAnyHeader()
-        .AllowAnyMethod()
-        .AllowAnyOrigin();
+    cors.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin();
 });
 
-app.MigrateChatDbContext();
-app.MigrateIdentityDb();
+//app.MigrateChatDbContext();
+//app.MigrateIdentityDb();
+
+if (app.Services.GetService<ChatDbContext>() != null)
+{
+    var chatDb = app.Services.GetRequiredService<ChatDbContext>();
+    chatDb.Database.Migrate();
+}
+
+if (app.Services.GetService<IdentityDbContext>() != null)
+{
+    var identityDb = app.Services.GetRequiredService<IdentityDbContext>();
+    identityDb.Database.Migrate();
+}
 
 app.UseHttpsRedirection();
 

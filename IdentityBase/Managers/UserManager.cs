@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using IdentityBase.Context;
+﻿using IdentityBase.Context;
 using IdentityBase.Entities;
 using IdentityBase.Models;
 using Microsoft.AspNetCore.Identity;
@@ -45,13 +40,13 @@ public class UserManager
 
     public async Task<string> Login(LoginUserModel loginUserModel)
     {
-        var user= await _dbContext.Users.FirstOrDefaultAsync(u=>u.UserName== loginUserModel.UserName);
+        var user = await _dbContext.Users.FirstOrDefaultAsync(u => u.UserName == loginUserModel.UserName);
         if (user == null)
         {
             throw new Exception("UserName or Password is incorrect");
         }
         var result = new PasswordHasher<User>().VerifyHashedPassword(user, user.PasswordHash, loginUserModel.Password);
-        
+
         if (result != PasswordVerificationResult.Success)
         {
             throw new Exception("UserName or Password is incorrect");

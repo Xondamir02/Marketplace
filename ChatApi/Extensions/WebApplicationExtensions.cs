@@ -2,7 +2,6 @@
 using Microsoft.EntityFrameworkCore;
 
 namespace ChatApi.Extensions;
-
 public static class WebApplicationExtensions
 {
     public static void MigrateChatDbContext(this WebApplication app)

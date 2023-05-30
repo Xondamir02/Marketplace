@@ -4,7 +4,7 @@ using IdentityBase.Providers;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
-namespace ChatApi.Controllers;  
+namespace ChatApi.Controllers;
 
 [Route("api/[controller]")]
 [ApiController]
