@@ -1,8 +1,10 @@
+using ChatApi.Extensions;
 using ChatCore1.Context;
 using ChatCore1.Managers;
 using IdentityBase.Context;
 using IdentityBase.Extensions;
 using IdentityBase.Middlewares;
+using IdentityBase.Providers;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 
@@ -46,12 +48,18 @@ builder.Services.AddDbContext<ChatDbContext>(options =>
 
 builder.Services.AddDbContext<IdentityDbContext>(options =>
 {
-    options.UseNpgsql(builder.Configuration.GetConnectionString("IdentityDb"));
+    var connectionString = builder.Configuration.GetConnectionString("IdentityDb");
+    options.UseNpgsql(connectionString);
+    //options.UseInMemoryDatabase("Memory");
 });
 
 builder.Services.AddIdentity(builder.Configuration);
 
 builder.Services.AddScoped<ConversationManager>();
+builder.Services.AddScoped<UserProvider>();
+
+builder.Services.AddHttpContextAccessor();
+
 
 var app = builder.Build();
 
@@ -63,20 +71,9 @@ app.UseCors(cors =>
     cors.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin();
 });
 
-//app.MigrateChatDbContext();
-//app.MigrateIdentityDb();
+app.MigrateChatDbContext();
+app.MigrateIdentityDb();
 
-if (app.Services.GetService<ChatDbContext>() != null)
-{
-    var chatDb = app.Services.GetRequiredService<ChatDbContext>();
-    chatDb.Database.Migrate();
-}
-
-if (app.Services.GetService<IdentityDbContext>() != null)
-{
-    var identityDb = app.Services.GetRequiredService<IdentityDbContext>();
-    identityDb.Database.Migrate();
-}
 
 app.UseHttpsRedirection();
 

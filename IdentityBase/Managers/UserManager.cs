@@ -22,10 +22,12 @@ public class UserManager
 
     public async Task<User> Register(CreatedUserModel createdUserModel)
     {
-        if (await _dbContext.Users.AnyAsync(u => u.UserName == createdUserModel.UserName))
+        var res = await _dbContext.Users.AnyAsync(u => u.UserName == createdUserModel.UserName);
+        if (res)
         {
             throw new Exception("Username already taken 😒");
         }
+
         var user = new User()
         {
             UserName = createdUserModel.UserName,
