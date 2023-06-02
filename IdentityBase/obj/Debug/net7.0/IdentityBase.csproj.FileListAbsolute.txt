@@ -1,0 +1,12 @@
+C:\GitHubRepo\New folder (2)\IdentityBase\bin\Debug\net7.0\IdentityBase.deps.json
+C:\GitHubRepo\New folder (2)\IdentityBase\bin\Debug\net7.0\IdentityBase.dll
+C:\GitHubRepo\New folder (2)\IdentityBase\bin\Debug\net7.0\IdentityBase.pdb
+C:\GitHubRepo\New folder (2)\IdentityBase\obj\Debug\net7.0\IdentityBase.csproj.AssemblyReference.cache
+C:\GitHubRepo\New folder (2)\IdentityBase\obj\Debug\net7.0\IdentityBase.GeneratedMSBuildEditorConfig.editorconfig
+C:\GitHubRepo\New folder (2)\IdentityBase\obj\Debug\net7.0\IdentityBase.AssemblyInfoInputs.cache
+C:\GitHubRepo\New folder (2)\IdentityBase\obj\Debug\net7.0\IdentityBase.AssemblyInfo.cs
+C:\GitHubRepo\New folder (2)\IdentityBase\obj\Debug\net7.0\IdentityBase.csproj.CoreCompileInputs.cache
+C:\GitHubRepo\New folder (2)\IdentityBase\obj\Debug\net7.0\IdentityBase.dll
+C:\GitHubRepo\New folder (2)\IdentityBase\obj\Debug\net7.0\refint\IdentityBase.dll
+C:\GitHubRepo\New folder (2)\IdentityBase\obj\Debug\net7.0\IdentityBase.pdb
+C:\GitHubRepo\New folder (2)\IdentityBase\obj\Debug\net7.0\ref\IdentityBase.dll

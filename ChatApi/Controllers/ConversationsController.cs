@@ -1,8 +1,10 @@
-﻿using ChatCore1.Managers;
+﻿using ChatApi.Hubs;
+using ChatCore1.Managers;
 using ChatCore1.Models;
 using IdentityBase.Providers;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.SignalR;
 
 namespace ChatApi.Controllers;
 
@@ -11,13 +13,17 @@ namespace ChatApi.Controllers;
 [Authorize]
 public class ConversationsController : ControllerBase
 {
+    private readonly UserConnectionIdService UserConnectionIdService;
     private readonly ConversationManager _conversationManager;
     private readonly UserProvider _userProvider;
-
-    public ConversationsController(ConversationManager conversationManager, UserProvider userProvider)
+    private readonly IHubContext<ConversationHub> _conversationHubContext;
+    public ConversationsController(ConversationManager conversationManager, 
+        UserProvider userProvider, 
+        IHubContext<ConversationHub> conversationHubContext)
     {
         _conversationManager = conversationManager;
         _userProvider = userProvider;
+        _conversationHubContext = conversationHubContext;
     }
 
     [HttpGet]
@@ -36,5 +42,28 @@ public class ConversationsController : ControllerBase
     public async Task SaveMessage(NewMessageModel messageModel)
     {
         await _conversationManager.SaveMessage(_userProvider.UserId, messageModel);
+
+        var  connectionId = UserConnectionIdService.ConnectionIds
+            .FirstOrDefault(c => c.Item1 == messageModel.ToUserId)?.Item2;
+        if (connectionId != null)
+        {
+            await _conversationHubContext.Clients.Client(connectionId)
+                .SendAsync("NewMessage", messageModel);
+        }
+
+
+        var connectionId1 = UserConnectionIdService.ConnectionIds
+            .FirstOrDefault(c => c.Item1 == _userProvider.UserId)?.Item2;
+
+        if (connectionId1 != null)
+        {
+            await _conversationHubContext.Clients.Client(connectionId1)
+                .SendAsync("NewMessage", new MessageModel()
+                {
+                    Text = messageModel.Text,
+                    FromUserId = _userProvider.UserId,
+                    Date = DateTime.Now
+                });
+        }
     }
 }

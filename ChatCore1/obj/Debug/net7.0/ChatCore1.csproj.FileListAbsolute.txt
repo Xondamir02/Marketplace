@@ -1,0 +1,14 @@
+C:\GitHubRepo\New folder (2)\ChatCore1\bin\Debug\net7.0\ChatCore1.deps.json
+C:\GitHubRepo\New folder (2)\ChatCore1\bin\Debug\net7.0\ChatCore1.runtimeconfig.json
+C:\GitHubRepo\New folder (2)\ChatCore1\bin\Debug\net7.0\ChatCore1.dll
+C:\GitHubRepo\New folder (2)\ChatCore1\bin\Debug\net7.0\ChatCore1.pdb
+C:\GitHubRepo\New folder (2)\ChatCore1\obj\Debug\net7.0\ChatCore1.csproj.AssemblyReference.cache
+C:\GitHubRepo\New folder (2)\ChatCore1\obj\Debug\net7.0\ChatCore1.GeneratedMSBuildEditorConfig.editorconfig
+C:\GitHubRepo\New folder (2)\ChatCore1\obj\Debug\net7.0\ChatCore1.AssemblyInfoInputs.cache
+C:\GitHubRepo\New folder (2)\ChatCore1\obj\Debug\net7.0\ChatCore1.AssemblyInfo.cs
+C:\GitHubRepo\New folder (2)\ChatCore1\obj\Debug\net7.0\ChatCore1.csproj.CoreCompileInputs.cache
+C:\GitHubRepo\New folder (2)\ChatCore1\obj\Debug\net7.0\ChatCore1.dll
+C:\GitHubRepo\New folder (2)\ChatCore1\obj\Debug\net7.0\refint\ChatCore1.dll
+C:\GitHubRepo\New folder (2)\ChatCore1\obj\Debug\net7.0\ChatCore1.pdb
+C:\GitHubRepo\New folder (2)\ChatCore1\obj\Debug\net7.0\ChatCore1.genruntimeconfig.cache
+C:\GitHubRepo\New folder (2)\ChatCore1\obj\Debug\net7.0\ref\ChatCore1.dll

@@ -1,4 +1,5 @@
 using ChatApi.Extensions;
+using ChatApi.Hubs;
 using ChatCore1.Context;
 using ChatCore1.Managers;
 using IdentityBase.Context;
@@ -57,9 +58,11 @@ builder.Services.AddIdentity(builder.Configuration);
 
 builder.Services.AddScoped<ConversationManager>();
 builder.Services.AddScoped<UserProvider>();
+builder.Services.AddSingleton(typeof(UserConnectionIdService));
+//builder.Services.AddSingleton<UserConnectionIdService>();
 
 builder.Services.AddHttpContextAccessor();
-
+builder.Services.AddSignalR();
 
 var app = builder.Build();
 

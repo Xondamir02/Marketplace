@@ -1,0 +1,33 @@
+C:\GitHubRepo\New folder (2)\Identity API\bin\Debug\net7.0\appsettings.Development.json
+C:\GitHubRepo\New folder (2)\Identity API\bin\Debug\net7.0\appsettings.json
+C:\GitHubRepo\New folder (2)\Identity API\bin\Debug\net7.0\Identity API.exe
+C:\GitHubRepo\New folder (2)\Identity API\bin\Debug\net7.0\Identity API.deps.json
+C:\GitHubRepo\New folder (2)\Identity API\bin\Debug\net7.0\Identity API.runtimeconfig.json
+C:\GitHubRepo\New folder (2)\Identity API\bin\Debug\net7.0\Identity API.dll
+C:\GitHubRepo\New folder (2)\Identity API\bin\Debug\net7.0\Identity API.pdb
+C:\GitHubRepo\New folder (2)\Identity API\bin\Debug\net7.0\Microsoft.AspNetCore.OpenApi.dll
+C:\GitHubRepo\New folder (2)\Identity API\bin\Debug\net7.0\Microsoft.OpenApi.dll
+C:\GitHubRepo\New folder (2)\Identity API\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\GitHubRepo\New folder (2)\Identity API\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\GitHubRepo\New folder (2)\Identity API\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\GitHubRepo\New folder (2)\Identity API\obj\Debug\net7.0\Identity API.csproj.AssemblyReference.cache
+C:\GitHubRepo\New folder (2)\Identity API\obj\Debug\net7.0\Identity API.GeneratedMSBuildEditorConfig.editorconfig
+C:\GitHubRepo\New folder (2)\Identity API\obj\Debug\net7.0\Identity API.AssemblyInfoInputs.cache
+C:\GitHubRepo\New folder (2)\Identity API\obj\Debug\net7.0\Identity API.AssemblyInfo.cs
+C:\GitHubRepo\New folder (2)\Identity API\obj\Debug\net7.0\Identity API.csproj.CoreCompileInputs.cache
+C:\GitHubRepo\New folder (2)\Identity API\obj\Debug\net7.0\Identity API.MvcApplicationPartsAssemblyInfo.cs
+C:\GitHubRepo\New folder (2)\Identity API\obj\Debug\net7.0\Identity API.MvcApplicationPartsAssemblyInfo.cache
+C:\GitHubRepo\New folder (2)\Identity API\obj\Debug\net7.0\staticwebassets\msbuild.Identity API.Microsoft.AspNetCore.StaticWebAssets.props
+C:\GitHubRepo\New folder (2)\Identity API\obj\Debug\net7.0\staticwebassets\msbuild.build.Identity API.props
+C:\GitHubRepo\New folder (2)\Identity API\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.Identity API.props
+C:\GitHubRepo\New folder (2)\Identity API\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.Identity API.props
+C:\GitHubRepo\New folder (2)\Identity API\obj\Debug\net7.0\staticwebassets.pack.json
+C:\GitHubRepo\New folder (2)\Identity API\obj\Debug\net7.0\staticwebassets.build.json
+C:\GitHubRepo\New folder (2)\Identity API\obj\Debug\net7.0\staticwebassets.development.json
+C:\GitHubRepo\New folder (2)\Identity API\obj\Debug\net7.0\scopedcss\bundle\Identity API.styles.css
+C:\GitHubRepo\New folder (2)\Identity API\obj\Debug\net7.0\Identity API.csproj.CopyComplete
+C:\GitHubRepo\New folder (2)\Identity API\obj\Debug\net7.0\Identity API.dll
+C:\GitHubRepo\New folder (2)\Identity API\obj\Debug\net7.0\refint\Identity API.dll
+C:\GitHubRepo\New folder (2)\Identity API\obj\Debug\net7.0\Identity API.pdb
+C:\GitHubRepo\New folder (2)\Identity API\obj\Debug\net7.0\Identity API.genruntimeconfig.cache
+C:\GitHubRepo\New folder (2)\Identity API\obj\Debug\net7.0\ref\Identity API.dll
