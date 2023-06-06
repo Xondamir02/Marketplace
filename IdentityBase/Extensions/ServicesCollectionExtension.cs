@@ -33,6 +33,24 @@ public static class ServicesCollectionExtension
                 ValidateLifetime = true,
                 ClockSkew = TimeSpan.Zero
             };
+            options.Events = new JwtBearerEvents()
+            {
+                OnMessageReceived = async context =>
+                {
+                    var accessToken = context.Request.Query["token"];
+                    context.Token = accessToken;
+
+                    //if (string.IsNullOrEmpty(context.Token))
+                    //{
+                    //    var accessToken = context.Request.Query["access_token"];
+                    //    var path = context.HttpContext.Request.Path;
+                    //    if (string.IsNullOrEmpty(accessToken) && path.StartsWithSegments("/hubs"))
+                    //    {
+                    //        context.Token=accessToken;
+                    //    }
+                    //}
+                }
+            };
         });
     }
     public static void AddIdentity(this IServiceCollection services, IConfiguration configuration)

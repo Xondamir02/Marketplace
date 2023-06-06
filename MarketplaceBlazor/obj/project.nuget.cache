@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "3ihkVLJtu59r74MIpmBUxhPUgjlh8ufCYDieQAi3XAZwuaP3oGjRSDK15JH1eVmRWbLAeOPt4fiC9AGKUCofNw==",
+  "dgSpecHash": "qVANJBAhOW3An6qdBuQloHHRFnFXfdUmhTUKGOxuMKqY8lcGw4Ti4Rc4efNV543yKVlFnTEXIhtetdBT3l9ASw==",
   "success": true,
   "projectFilePath": "C:\\Users\\hp\\source\\Microservice\\MarketplaceBlazor\\MarketplaceBlazor.csproj",
   "expectedPackageFiles": [
@@ -12,7 +12,14 @@
     "C:\\Users\\hp\\.nuget\\packages\\microsoft.aspnetcore.components.web\\7.0.5\\microsoft.aspnetcore.components.web.7.0.5.nupkg.sha512",
     "C:\\Users\\hp\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly\\7.0.5\\microsoft.aspnetcore.components.webassembly.7.0.5.nupkg.sha512",
     "C:\\Users\\hp\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly.devserver\\7.0.5\\microsoft.aspnetcore.components.webassembly.devserver.7.0.5.nupkg.sha512",
+    "C:\\Users\\hp\\.nuget\\packages\\microsoft.aspnetcore.connections.abstractions\\7.0.5\\microsoft.aspnetcore.connections.abstractions.7.0.5.nupkg.sha512",
+    "C:\\Users\\hp\\.nuget\\packages\\microsoft.aspnetcore.http.connections.client\\7.0.5\\microsoft.aspnetcore.http.connections.client.7.0.5.nupkg.sha512",
+    "C:\\Users\\hp\\.nuget\\packages\\microsoft.aspnetcore.http.connections.common\\7.0.5\\microsoft.aspnetcore.http.connections.common.7.0.5.nupkg.sha512",
     "C:\\Users\\hp\\.nuget\\packages\\microsoft.aspnetcore.metadata\\7.0.5\\microsoft.aspnetcore.metadata.7.0.5.nupkg.sha512",
+    "C:\\Users\\hp\\.nuget\\packages\\microsoft.aspnetcore.signalr.client\\7.0.5\\microsoft.aspnetcore.signalr.client.7.0.5.nupkg.sha512",
+    "C:\\Users\\hp\\.nuget\\packages\\microsoft.aspnetcore.signalr.client.core\\7.0.5\\microsoft.aspnetcore.signalr.client.core.7.0.5.nupkg.sha512",
+    "C:\\Users\\hp\\.nuget\\packages\\microsoft.aspnetcore.signalr.common\\7.0.5\\microsoft.aspnetcore.signalr.common.7.0.5.nupkg.sha512",
+    "C:\\Users\\hp\\.nuget\\packages\\microsoft.aspnetcore.signalr.protocols.json\\7.0.5\\microsoft.aspnetcore.signalr.protocols.json.7.0.5.nupkg.sha512",
     "C:\\Users\\hp\\.nuget\\packages\\microsoft.extensions.configuration\\7.0.0\\microsoft.extensions.configuration.7.0.0.nupkg.sha512",
     "C:\\Users\\hp\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\7.0.0\\microsoft.extensions.configuration.abstractions.7.0.0.nupkg.sha512",
     "C:\\Users\\hp\\.nuget\\packages\\microsoft.extensions.configuration.binder\\7.0.4\\microsoft.extensions.configuration.binder.7.0.4.nupkg.sha512",
@@ -20,6 +27,7 @@
     "C:\\Users\\hp\\.nuget\\packages\\microsoft.extensions.configuration.json\\7.0.0\\microsoft.extensions.configuration.json.7.0.0.nupkg.sha512",
     "C:\\Users\\hp\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\7.0.0\\microsoft.extensions.dependencyinjection.7.0.0.nupkg.sha512",
     "C:\\Users\\hp\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\hp\\.nuget\\packages\\microsoft.extensions.features\\7.0.5\\microsoft.extensions.features.7.0.5.nupkg.sha512",
     "C:\\Users\\hp\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\7.0.0\\microsoft.extensions.fileproviders.abstractions.7.0.0.nupkg.sha512",
     "C:\\Users\\hp\\.nuget\\packages\\microsoft.extensions.fileproviders.physical\\7.0.0\\microsoft.extensions.fileproviders.physical.7.0.0.nupkg.sha512",
     "C:\\Users\\hp\\.nuget\\packages\\microsoft.extensions.filesystemglobbing\\7.0.0\\microsoft.extensions.filesystemglobbing.7.0.0.nupkg.sha512",
@@ -32,6 +40,7 @@
     "C:\\Users\\hp\\.nuget\\packages\\system.io.pipelines\\7.0.0\\system.io.pipelines.7.0.0.nupkg.sha512",
     "C:\\Users\\hp\\.nuget\\packages\\system.text.encodings.web\\7.0.0\\system.text.encodings.web.7.0.0.nupkg.sha512",
     "C:\\Users\\hp\\.nuget\\packages\\system.text.json\\7.0.0\\system.text.json.7.0.0.nupkg.sha512",
+    "C:\\Users\\hp\\.nuget\\packages\\system.threading.channels\\7.0.0\\system.threading.channels.7.0.0.nupkg.sha512",
     "C:\\Users\\hp\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\7.0.5\\microsoft.netcore.app.runtime.mono.browser-wasm.7.0.5.nupkg.sha512"
   ],
   "logs": []

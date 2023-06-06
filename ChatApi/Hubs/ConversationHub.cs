@@ -1,7 +1,6 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.SignalR;
 using System.Security.Claims;
-using System.Text.RegularExpressions;
 
 namespace ChatApi.Hubs;
 public class ConversationHub : Hub
@@ -29,20 +28,20 @@ public class ConversationHub : Hub
         _connectionIdService.ConnectionIds.Remove(item);
     }
 
-    public void JoinGroup(string groupId)
-    {
-        Groups.AddToGroupAsync(Context.ConnectionId, groupId);
-    }
+    //public void JoinGroup(string groupId)
+    //{
+    //    Groups.AddToGroupAsync(Context.ConnectionId, groupId);
+    //}
 
-    public void LeaveGroup(string groupId)
-    {
-        Groups.RemoveFromGroupAsync(Context.ConnectionId, groupId);
-    }
+    //public void LeaveGroup(string groupId)
+    //{
+    //    Groups.RemoveFromGroupAsync(Context.ConnectionId, groupId);
+    //}
 
-    public void SendGroupMessage(string groupId, string message)
-    {
-        Clients.Groups(groupId).SendAsync(message);
-    }
+    //public void SendGroupMessage(string groupId, string message)
+    //{
+    //    Clients.Groups(groupId).SendAsync(message);
+    //}
 }
 
 public class UserConnectionIdService

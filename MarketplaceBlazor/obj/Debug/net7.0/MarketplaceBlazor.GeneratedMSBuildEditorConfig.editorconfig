@@ -9,17 +9,57 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = browser
 build_property.RootNamespace = MarketplaceBlazor
 build_property.RootNamespace = MarketplaceBlazor
-build_property.ProjectDir = C:\GitHubRepo\New folder (2)\MarketplaceBlazor\
+build_property.ProjectDir = C:\Users\hp\source\Microservice\MarketplaceBlazor\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\GitHubRepo\New folder (2)\MarketplaceBlazor
+build_property.MSBuildProjectDirectory = C:\Users\hp\source\Microservice\MarketplaceBlazor
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/GitHubRepo/New folder (2)/MarketplaceBlazor/App.razor]
+[C:/Users/hp/source/Microservice/MarketplaceBlazor/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/GitHubRepo/New folder (2)/MarketplaceBlazor/_Imports.razor]
+[C:/Users/hp/source/Microservice/MarketplaceBlazor/Pages/Account/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFxJbmRleC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hp/source/Microservice/MarketplaceBlazor/Pages/Account/Login.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFxMb2dpbi5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hp/source/Microservice/MarketplaceBlazor/Pages/Account/Profile.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFxQcm9maWxlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hp/source/Microservice/MarketplaceBlazor/Pages/Account/Register.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFxSZWdpc3Rlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hp/source/Microservice/MarketplaceBlazor/Pages/Conversation/Chats.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29udmVyc2F0aW9uXENoYXRzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hp/source/Microservice/MarketplaceBlazor/Pages/Conversation/Conversation.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29udmVyc2F0aW9uXENvbnZlcnNhdGlvbi5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hp/source/Microservice/MarketplaceBlazor/Shared/SurveyPrompt.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hp/source/Microservice/MarketplaceBlazor/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hp/source/Microservice/MarketplaceBlazor/Pages/Conversation/Test.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29udmVyc2F0aW9uXFRlc3QucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-nakby9ody7
+
+[C:/Users/hp/source/Microservice/MarketplaceBlazor/Shared/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-m2x9k7tqnm
+
+[C:/Users/hp/source/Microservice/MarketplaceBlazor/Shared/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-7ef5csgf4j

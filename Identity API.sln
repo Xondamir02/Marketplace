@@ -13,6 +13,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChatCore1", "ChatCore1\Chat
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MarketplaceBlazor", "..\..\Users\hp\source\Microservice\MarketplaceBlazor\MarketplaceBlazor.csproj", "{B2A6543C-EC49-4B9E-A1CC-C718C5B1C407}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Marketplace.Services.Organizations", "Marketplace.Services.Organizations\Marketplace.Services.Organizations.csproj", "{9E5777D5-F9AA-40ED-84D1-3612F84D864E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{B2A6543C-EC49-4B9E-A1CC-C718C5B1C407}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B2A6543C-EC49-4B9E-A1CC-C718C5B1C407}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B2A6543C-EC49-4B9E-A1CC-C718C5B1C407}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E5777D5-F9AA-40ED-84D1-3612F84D864E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E5777D5-F9AA-40ED-84D1-3612F84D864E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E5777D5-F9AA-40ED-84D1-3612F84D864E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E5777D5-F9AA-40ED-84D1-3612F84D864E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -13,7 +13,14 @@
       "Microsoft.AspNetCore.Components.Forms.dll": "sha256-eoQ2CgfBGkvbK4QUMBgFDPIBqJem+g8247Fb3ZmnmCI=",
       "Microsoft.AspNetCore.Components.Web.dll": "sha256-p3BQFPwUbOgu5j9V+1HlUGwDcVzB7iYNO4dIsDCOAgA=",
       "Microsoft.AspNetCore.Components.WebAssembly.dll": "sha256-55+LOYcA1yHHPQEjl6eI0UGgteq41y+8js6DQ5PhXDk=",
+      "Microsoft.AspNetCore.Connections.Abstractions.dll": "sha256-TsT5ooA1qaIjwlZT+nlSSQ\/AjpM96cokpoFxIN6FLNM=",
+      "Microsoft.AspNetCore.Http.Connections.Client.dll": "sha256-0pzSXWcbX21hQmjTb4cFwqJ7ahbkOPHempiWy\/lHy20=",
+      "Microsoft.AspNetCore.Http.Connections.Common.dll": "sha256-sKb0lsXioUnqefUK+f5aPscGQlcYYBIgVqFLI6tCfYM=",
       "Microsoft.AspNetCore.Metadata.dll": "sha256-eIu14RWCV9bKCAARda4hnWGsOKJfmnGfQpkmeRnSibQ=",
+      "Microsoft.AspNetCore.SignalR.Client.dll": "sha256-H8kZt7qPu0kGI8M3DKdwUaza+g9E7U1tgLmLNaGx8Ts=",
+      "Microsoft.AspNetCore.SignalR.Client.Core.dll": "sha256-7hlz5draZaPwUtjQLXPvyAPa6cS5E24h2rAxN13VKTU=",
+      "Microsoft.AspNetCore.SignalR.Common.dll": "sha256-znH9hfJfIIgHnduO6NFEpU78uB\/cZb8qv0psiibiCHs=",
+      "Microsoft.AspNetCore.SignalR.Protocols.Json.dll": "sha256-w7o2ROxKF08\/2dfHqcKpFqi49FSrHYl2QOCs2QqMC6U=",
       "Microsoft.Extensions.Configuration.dll": "sha256-PqQvp77oZ4+uuy2ElXk8AU9I6RfZSf18UGTrd4rulOo=",
       "Microsoft.Extensions.Configuration.Abstractions.dll": "sha256-CnS3b9EMFQmETBUVEgtcron4DBsfFdcVt3zfCP6Uflg=",
       "Microsoft.Extensions.Configuration.Binder.dll": "sha256-7GY9+7Cm0Z8DJ+JCFwgCx9OfFtUvXlFHaaLlBYmXfIE=",
@@ -21,6 +28,7 @@
       "Microsoft.Extensions.Configuration.Json.dll": "sha256-k525Vc8hbMpPjxYUYZNPuzJIuy+E1Is2XRTMFbUm1pE=",
       "Microsoft.Extensions.DependencyInjection.dll": "sha256-\/+vk9BsQP4bCVt1Y6aXakSztSMAli200ER6untxHLBg=",
       "Microsoft.Extensions.DependencyInjection.Abstractions.dll": "sha256-jrAm+30mcWoI54hsUTOr+RMOzHIq+zO8ZuRBVrBvCoo=",
+      "Microsoft.Extensions.Features.dll": "sha256-20qC6eg0jK9eXAus8X7iY\/t5AIaES8qiCKFyO1WNZzA=",
       "Microsoft.Extensions.FileProviders.Abstractions.dll": "sha256-Zt6OY6gg\/1Tzt9oFOQBkezPvUVkFK4dyM6Pfk+MTUvg=",
       "Microsoft.Extensions.FileProviders.Physical.dll": "sha256-9xkIbIienaRj9Td2MyWYzL9JmVx6CKbGCPrvJ1Pxfn8=",
       "Microsoft.Extensions.FileSystemGlobbing.dll": "sha256-Gm0yiS5fySh2nZXdCRKZIbASK8sSukwjogLc+a9EBZY=",
@@ -199,13 +207,13 @@
       "mscorlib.dll": "sha256-qqpKd+W+AFb6UxudEYEKzrz7ma81p5LrWUwPBVvHV4U=",
       "netstandard.dll": "sha256-OYYuPT3JUknj4LdYIa58zF7kDB3tCnLzjCSuhEjtKXM=",
       "System.Private.CoreLib.dll": "sha256-EVS7zPxPV\/41g2mzPwdXtwiigWxI\/SeAHme1IgyD6tc=",
-      "MarketplaceBlazor.dll": "sha256-Rocm0hE5Z3JOhisYE4f0Wbi39mrcWIqFgL7VOYzOySA="
+      "MarketplaceBlazor.dll": "sha256-ri6esLzH6ZiGw4fZCBM\/R0C4QnSII2cO+ye+jlAD1eg="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
-      "MarketplaceBlazor.pdb": "sha256-ebMAQDQvNhgv1aUYJWwKjCi2SdQPtHiwUTzA4nfT8hk="
+      "MarketplaceBlazor.pdb": "sha256-uwsZKoqVvDKbWedBKmv44P7oD9FSpDlntLuUk1Ih4M4="
     },
     "runtime": {
       "dotnet.7.0.5.wwc4zs61i6.js": "sha256-codB25EodaFEP43MDCfMBuKXU4LqurUKnQrpoMIFnPs=",

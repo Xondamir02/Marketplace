@@ -51,6 +51,7 @@ builder.Services.AddDbContext<IdentityDbContext>(options =>
 {
     var connectionString = builder.Configuration.GetConnectionString("IdentityDb");
     options.UseNpgsql(connectionString);
+
     //options.UseInMemoryDatabase("Memory");
 });
 
@@ -59,6 +60,7 @@ builder.Services.AddIdentity(builder.Configuration);
 builder.Services.AddScoped<ConversationManager>();
 builder.Services.AddScoped<UserProvider>();
 builder.Services.AddSingleton(typeof(UserConnectionIdService));
+
 //builder.Services.AddSingleton<UserConnectionIdService>();
 
 builder.Services.AddHttpContextAccessor();
@@ -85,6 +87,8 @@ app.UseAuthentication();
 app.UseAuthorization();
 
 app.UseErrorHandlerMiddleware();
+
+app.MapHub<ConversationHub>("/hubs/conversation");
 
 app.MapControllers();
 

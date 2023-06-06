@@ -1,5 +1,131 @@
-﻿<h3>Chats</h3>
+﻿@page "/chats/{ConversationId}"
+@using Microsoft.AspNetCore.SignalR.Client
+@using Blazored.LocalStorage
+@using MarketplaceBlazor.DtoModel.ConversationsModel
+@using MarketplaceBlazor.Services
+@inject ConversationsService ConversationsService
+@inject ILocalStorageService Storage
+@inject HttpClient Http
+
+<h3>Chat</h3>
+<h3>ConversationId: @ConversationId</h3>
+
+
+
+
+<PageTitle>Chat</PageTitle>	
+@foreach (var message in messages)
+{
+    <h3>@message.Text</h3>
+    <span>@message.Date.ToString("g")</span>
+}
+<div class="flex-grow-0 py-3 px-4 border-top">
+    <form >
+
+        <input class="form-control" type="text" @bind-value="messageText" placeholder="message"/>
+        <button type="button" class="btn btn-primary form-control" @onclick="(async () => await SendMessage())">Send</button>
+    </form>
+</div>
+
+@*<div class="container">
+  
+ 
+    <h1 class="h3 mb-3">Chat Room</h1>
+    <div style="border-radius: 25px;
+                margin-top: 1rem;
+                padding: 2rem;
+                box-shadow: 0 0rem 3rem rgba(8,7,16,0.6)!important;">
+                <div class="card">
+                    <div class="row">
+                        <div class="col-12 col-lg-5 col-xl-3 border-end">
+                                
+                            <ChatUser User="onlineUser" />
+                                
+
+                            <hr class="d-block d-lg-none mt-1 mb-0">
+                        </div>
+
+                        <div class="col-12 col-lg-7 col-xl-9">
+                            <div class="position-relative">
+                                <div class="chat-messages p-4">
+                                    @foreach (var message in messages)
+                                    {
+                                        <h3>@message.Text</h3>
+                                        <span>@message.Date.ToString("g")</span>
+                                    }
+                                </div>
+                            </div>
+
+                            <div class="flex-grow-0 py-3 px-4 border-top">
+                                <form >
+                                    <input class="form-control" type="text" @bind-value="messageText" placeholder="message" />
+                                    <button type="button" class="btn btn-primary form-control" @onclick="(async() => await SendMessage())">Send</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+       
+    </div>
+</div>
+*@
+
+
+
 
 @code {
+	private string messageText { get; set; }
 
+	[Parameter]
+	public string? ConversationId { get; set; }
+
+	private List<MessageModel>? messages = new List<MessageModel>();
+
+	private HubConnection? _hubConnection;
+
+	protected override async Task OnInitializedAsync()
+	{
+		messages = await ConversationsService.Get<List<MessageModel>>($"api/Conversations/{ConversationId}");
+		await ConnectToHub();
+	}
+
+	private async Task ConnectToHub()
+	{
+		var token = await Storage.GetItemAsStringAsync("token");
+
+		_hubConnection = new HubConnectionBuilder()
+			.WithUrl($"http://localhost:5204/hubs/conversation?token={token}")
+			.Build();
+
+		_hubConnection.On<MessageModel>("NewMessage", model =>
+		{
+			messages.Add(model);
+			StateHasChanged();
+		});
+
+		await _hubConnection.StartAsync();
+	}
+
+	private async Task SendMessage()
+	{
+		var token = await Storage.GetItemAsStringAsync("token");
+
+		var request = new HttpRequestMessage(HttpMethod.Post, "api/Conversations");
+		request.Headers.Add("Authorization", $"Bearer {token}");
+		request.Content = JsonContent.Create(new NewMessageModel()
+		{ 
+			Text = messageText,
+			ToUserId = messages[0].FromUserId
+		});
+		await Http.SendAsync(request);
+	}
+
+
+
+	
 }
+
+
+
+

@@ -17,8 +17,8 @@ public class ConversationsController : ControllerBase
     private readonly ConversationManager _conversationManager;
     private readonly UserProvider _userProvider;
     private readonly IHubContext<ConversationHub> _conversationHubContext;
-    public ConversationsController(ConversationManager conversationManager, 
-        UserProvider userProvider, 
+    public ConversationsController(ConversationManager conversationManager,
+        UserProvider userProvider,
         IHubContext<ConversationHub> conversationHubContext)
     {
         _conversationManager = conversationManager;
@@ -43,7 +43,7 @@ public class ConversationsController : ControllerBase
     {
         await _conversationManager.SaveMessage(_userProvider.UserId, messageModel);
 
-        var  connectionId = UserConnectionIdService.ConnectionIds
+        var connectionId = UserConnectionIdService.ConnectionIds
             .FirstOrDefault(c => c.Item1 == messageModel.ToUserId)?.Item2;
         if (connectionId != null)
         {

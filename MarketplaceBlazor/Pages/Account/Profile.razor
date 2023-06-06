@@ -3,11 +3,19 @@
 @using MarketplaceBlazor.DtoModel
 @inject HttpClient Http
 @inject ILocalStorageService Storage
+    <div class="d-flex justify-content-center" style="flex-wrap:wrap;">
+            <div class="form-group row g-3 col-md-5" style="border-radius: 25px;
+                margin-top: 1rem;
+                padding: 2rem;
+                box-shadow: 0 0rem 3rem rgba(8,7,16,0.6)!important;">
+                    <h3 class="text-center">Profile</h3>
 
-<h3>Profile</h3>
+                    <h1>Name: @user?.Name</h1>
+                <h1>UserName: @user?.UserName</h1>
+                
 
-<h1>Name: @user?.Name</h1>
-<h1>UserName: @user?.UserName</h1>
+            </div>
+    </div>
 
 @code {
     private UserModel? user = new UserModel();
